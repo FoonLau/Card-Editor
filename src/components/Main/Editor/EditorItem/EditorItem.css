@@ -1,0 +1,11 @@
+.app-editor-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.app-editor-item label {
+  width: 35%;
+  text-align: right;
+  margin-right: 10px;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Item from 'components/Item/Item';
+import './Output.css';
 
 export const Output = props => (
   <div className="app-output">

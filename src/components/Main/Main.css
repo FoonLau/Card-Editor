@@ -1,0 +1,19 @@
+.app-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app-main-editor,
+.app-main-output {
+  width: 50%;
+}
+
+.app-main-editor {
+  border-right: 1px solid darkgray;
+  box-sizing: border-box;
+}
+
+.app-main-gallery {
+  width: 100%;
+  border-top: 1px solid darkgray;
+}

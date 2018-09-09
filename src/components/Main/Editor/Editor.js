@@ -6,6 +6,7 @@ import {
   update 
 } from './duck/duck'
 import EditorItem from './EditorItem/EditorItem';
+import './Editor.css'
 
 export class Editor extends Component {
   onBackgroundColourChange = (e) => {

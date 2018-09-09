@@ -1,0 +1,9 @@
+.app-gallery {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.app-gallery .app-gallery-item {
+  margin-right: 10px;
+}

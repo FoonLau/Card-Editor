@@ -2,6 +2,7 @@ import React from 'react';
 import Editor from './Editor/Editor';
 import Gallery from './Gallery/Gallery';
 import Output from './Output/Output';
+import './Main.css'
 
 export default () => (
   <div className="app-main">

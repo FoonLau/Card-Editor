@@ -13,7 +13,7 @@ class LocalStorageMock {
   }
 
   getItem(key) {
-    return this.store[key];
+    return this.store[key] || null;
   }
 
   setItem(key, value) {
