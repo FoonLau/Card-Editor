@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Item from 'components/Item/Item';
 
-export const Output = (props) => (
+const Output = props => (
   <div className="app-output">
-    <div className="app-output-item" style={props} />
+    <Item {...props} />
   </div>
 );
 

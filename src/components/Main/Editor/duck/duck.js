@@ -9,8 +9,11 @@ export const update = (config) => ({
     config
   }
 });
-export const save = () => ({
-  type: SAVE
+export const save = (config) => ({
+  type: SAVE,
+  payload: {
+    config
+  }
 });
 
 const initialState = {

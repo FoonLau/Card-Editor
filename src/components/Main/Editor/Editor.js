@@ -33,7 +33,7 @@ export class Editor extends Component {
   }
 
   onSaveButtonClick = () => {
-    this.props.save();
+    this.props.save(this.props);
   }
 
   render() {
