@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[object Object] 1`] = `
+<div
+  className="app-main"
+>
+  <div
+    className="app-main-editor"
+  >
+    <div
+      className="app-editor"
+    >
+      <div>
+        <label
+          htmlFor="app-editor-background"
+        >
+          background colour
+        </label>
+        <input
+          id="app-editor-background"
+          onChange={[Function]}
+          type="color"
+          value={undefined}
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="app-editor-width"
+        >
+          width
+        </label>
+        <input
+          id="app-editor-width"
+          onChange={[Function]}
+          type="number"
+          value={undefined}
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="app-editor-height"
+        >
+          height
+        </label>
+        <input
+          id="app-editor-height"
+          onChange={[Function]}
+          type="number"
+          value={undefined}
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="app-editor-border-radius"
+        >
+          border radius
+        </label>
+        <input
+          id="app-editor-border-radius"
+          onChange={[Function]}
+          type="range"
+          value={undefined}
+        />
+      </div>
+      <button
+        className="app-editor-save"
+        onClick={[Function]}
+      >
+        Save
+      </button>
+    </div>
+  </div>
+  <div
+    className="app-main-output"
+  >
+    <div
+      className="app-output"
+    >
+      <div
+        className="app-item"
+        style={
+          Object {
+            "borderRadius": "undefined%",
+            "dispatch": [Function],
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="app-main-gallery"
+  >
+    <div
+      className="app-gallery"
+    />
+  </div>
+</div>
+`;

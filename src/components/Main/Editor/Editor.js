@@ -33,7 +33,8 @@ export class Editor extends Component {
   }
 
   onSaveButtonClick = () => {
-    this.props.save(this.props);
+    const { backgroundColor, width, height, borderRadius } = this.props;
+    this.props.save({ backgroundColor, width, height, borderRadius });
   }
 
   render() {

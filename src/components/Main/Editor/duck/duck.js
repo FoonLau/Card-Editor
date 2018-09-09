@@ -16,7 +16,7 @@ export const save = (config) => ({
   }
 });
 
-const initialState = {
+export const initialState = {
   backgroundColor: '#ffffff',
   width: 0,
   height: 0,

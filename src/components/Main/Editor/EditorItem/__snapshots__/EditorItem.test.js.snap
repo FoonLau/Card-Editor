@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div>
+  <label
+    htmlFor={undefined}
+  />
+  <input
+    id={undefined}
+    onChange={undefined}
+    type={undefined}
+    value={undefined}
+  />
+</div>
+`;

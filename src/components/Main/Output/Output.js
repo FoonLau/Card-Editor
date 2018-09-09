@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Item from 'components/Item/Item';
 
-const Output = props => (
+export const Output = props => (
   <div className="app-output">
     <Item {...props} />
   </div>
