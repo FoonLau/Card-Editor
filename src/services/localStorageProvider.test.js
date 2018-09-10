@@ -11,5 +11,5 @@ it('should set correctly', () => {
   const value = 'value';
   localStorageProvider.set(key, value);
 
-  expect(global.localStorage.getItem(key)).toBe(value);
+  expect(global.localStorage.getItem(key)).toBe(JSON.stringify(value));
 });
