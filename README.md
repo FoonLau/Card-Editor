@@ -32,7 +32,7 @@ All source files are located inside the `src` folder. Unit test files are end up
       App/
       Item/
       Main/
-    modules/      -- rootReducer, rootEpic
+    modules/      -- rootReducer
     services/     -- common services
     index.js      -- entry file
   package.json
