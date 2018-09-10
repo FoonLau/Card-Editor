@@ -10,7 +10,9 @@ exports[`[object Object] 1`] = `
     <div
       className="app-editor"
     >
-      <div>
+      <div
+        className="app-editor-item"
+      >
         <label
           htmlFor="app-editor-background"
         >
@@ -23,7 +25,9 @@ exports[`[object Object] 1`] = `
           value={undefined}
         />
       </div>
-      <div>
+      <div
+        className="app-editor-item"
+      >
         <label
           htmlFor="app-editor-width"
         >
@@ -36,7 +40,9 @@ exports[`[object Object] 1`] = `
           value={undefined}
         />
       </div>
-      <div>
+      <div
+        className="app-editor-item"
+      >
         <label
           htmlFor="app-editor-height"
         >
@@ -49,7 +55,9 @@ exports[`[object Object] 1`] = `
           value={undefined}
         />
       </div>
-      <div>
+      <div
+        className="app-editor-item"
+      >
         <label
           htmlFor="app-editor-border-radius"
         >

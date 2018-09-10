@@ -1,9 +1,9 @@
 const localStorageProvider =  {
   get: (key) => {
-    return window.localStorage.getItem(key);
+    return JSON.parse(window.localStorage.getItem(key));
   },
   set: (key, value) => {
-    window.localStorage.setItem(key, value);
+    window.localStorage.setItem(key, JSON.stringify(value));
   },
 };
 

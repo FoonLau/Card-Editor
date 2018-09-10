@@ -1,3 +1,5 @@
+import localStorageProvider from 'services/localStorageProvider';
+
 // action types
 export const UPDATE = 'app/editor/UPDATE';
 export const SAVE = 'app/editor/SAVE';
@@ -9,12 +11,23 @@ export const update = (config) => ({
     config
   }
 });
-export const save = (config) => ({
-  type: SAVE,
-  payload: {
-    config
-  }
-});
+export const save = (config) => {
+  const savedItems = localStorageProvider.get('app.items') || [];
+  const item = {
+    id: new Date().getTime(),
+    ...config
+  };
+  localStorageProvider.set('app.items', savedItems.concat(item));
+  
+  return (dispatch) => {
+    dispatch({
+      type: SAVE,
+      payload: {
+        item
+      }
+    });
+  };
+};
 
 export const initialState = {
   backgroundColor: '#ffffff',
