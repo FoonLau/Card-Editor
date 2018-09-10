@@ -2,13 +2,14 @@ import React from 'react';
 import { mount } from 'enzyme';
 import configureMockStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 import Item from 'components/Item/Item';
 import GalleryItem from './GalleryItem';
-import { deleteItem } from '../duck/duck';
+import { DELETE_ITEM } from '../duck/duck';
 
 let store;
 beforeEach(() => {
-  store = configureMockStore()({
+  store = configureMockStore([ thunk ])({
     items: [ { id: 1 } ]
   });
 });
@@ -35,5 +36,5 @@ it('should dispatch deleteItem action when click the button', () => {
   button.simulate('click');
   const action = store.getActions()[0];
 
-  expect(action).toEqual(deleteItem(1));
+  expect(action.type).toEqual(DELETE_ITEM);
 });

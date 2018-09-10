@@ -3,6 +3,7 @@ import {
   shallow,
   mount
 } from 'enzyme';
+import thunk from 'redux-thunk'
 import configureMockStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import { 
@@ -16,7 +17,7 @@ import EditorItem from './EditorItem/EditorItem';
 let store;
 
 beforeEach(() => {
-  store = configureMockStore()({
+  store = configureMockStore([ thunk ])({
     edittingItem: initialState,
     items: []
   });
@@ -59,8 +60,5 @@ it('should dispatch save action when click the save button', () => {
   wrapper.find('button').get(0).props.onClick();
   const action = store.getActions()[0];
 
-  expect(action).toEqual({
-    type: SAVE,
-    payload: { config: initialState }
-  });
+  expect(action.type).toEqual(SAVE);
 });
